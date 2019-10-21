@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:grx="http://schemas.android.com/apk/res-auto">
+    <GrxButtonPreference grx:button_Style="big" grx:button_Text="Press here to apply all changes" grx:confirmKillpackage="false" grx:killpackage="com.android.systemui" />
+    <GrxPreferenceCategory android:title="Default" />
+    <GrxSwitchPreference android:title="Right" android:key="network_speed" android:defaultValue="false" grx:systemType="system" />
+    <GrxSwitchPreference android:title="Left" android:key="network_speed_left" android:defaultValue="false" grx:systemType="system" />
+    <GrxPreferenceCategory android:title="Custom" />
+    <GrxSingleSelection android:title="Position" android:key="change_traffic" android:summary="Set position" android:defaultValue="1" grx:optionsArray="@array/traffic_entries" grx:valuesArray="@array/traffic_values" />
+    <GrxSingleSelection android:title="Displayed info" android:key="network_traffic_state" android:defaultValue="0" grx:optionsArray="@array/traffic_state_items" grx:valuesArray="@array/traffic_state_values" />
+    <GrxCheckBoxPreference android:title="Bits/bytes" android:key="network_traffic_unit" android:defaultValue="false" android:summaryOn="Bytes" android:summaryOff="Bits" />
+    <GrxCheckBoxPreference android:title="Arrows" android:key="network_traffic_show_arrows" android:defaultValue="true" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <GrxSingleSelection android:title="Arrows position" android:key="network_traffic_arrows_position" android:defaultValue="0" grx:optionsArray="@array/arrow_position_entries" grx:valuesArray="@array/arrow_position_values" />
+    <GrxCheckBoxPreference android:title="Autohide on low traffic" android:key="network_traffic_autohide" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <GrxSeekBar android:title="Autohide threshold" android:key="network_traffic_threshold" android:dependency="network_traffic_autohide" android:defaultValue="10" grx:interval="1" grx:maxValue="100" grx:minValue="0" grx:showPopup="true" grx:units=" kB" />
+    <GrxSingleSelection android:title="Font style" android:key="network_traffic_text_style" android:summary="Set font" android:defaultValue="0" grx:optionsArray="@array/traffic_style_entries" grx:valuesArray="@array/traffic_style_entry_values" />
+    <GrxSeekBar android:title="Text size scale factor" android:key="network_traffic_scale" android:defaultValue="10" grx:interval="1" grx:maxValue="10" grx:minValue="0" grx:showPopup="true" grx:units=" dp" />
+    <GrxCheckBoxPreference android:title="Separate colors for text and arrows" android:key="network_traffic_global_color" android:defaultValue="false" android:summaryOn="Text and arrows can be colored separately" android:summaryOff="Text color will apply to arrows as well" />
+    <GrxColorPicker android:title="Text color" android:key="network_traffic_color" android:summary="Set color" android:defaultValue="0xCAEAEAEA" grx:showAlphaSlider="true" />
+    <GrxColorPicker android:title="Arrows color" android:key="network_traffic_arrow_color" android:summary="Set color" android:dependency="network_traffic_global_color" android:defaultValue="0xCACACACA" grx:showAlphaSlider="true" />
+</PreferenceScreen>

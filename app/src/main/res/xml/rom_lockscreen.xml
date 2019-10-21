@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:grx="http://schemas.android.com/apk/res-auto">
+    <GrxButtonPreference grx:button_Style="big" grx:button_Text="Press here to apply all changes" grx:confirmKillpackage="false" grx:killpackage="com.android.systemui" />
+    <GrxSwitchPreference android:title="Fingerprint after reboot" android:key="fingerprint_unlock" android:summary="" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <GrxInfoText android:summary="WARNING! When it's enabled you must anyways use pattern/password/code just one time to get working fingerprint in 3rd apps" />
+    <GrxSwitchPreference android:title="Quick-reply" android:key="is_lock_screen_allow_remote_input" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <GrxSwitchPreference android:title="Help text" android:key="lockscreen_guide_text" android:defaultValue="true" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <GrxSwitchPreference android:title="Next alarm" android:key="next_alarm_switch" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <GrxColorPicker android:title="Color" android:key="next_alarm_color" android:summary="Set color" android:dependency="next_alarm_switch" android:defaultValue="0xFFFFFFFF" grx:colorPickerStyle="flower" grx:showAlphaSlider="true" grx:showAutoButton="true" />
+	<GrxPreferenceCategory android:title="Widget" />
+	<GrxInfoText android:summary="WARNING! If a widget is enabled device need 1min to show it after reboot SysUI, just be patient" />
+    <GrxSwitchPreference android:title="Widget" android:key="mwidget_widget_enable" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <GrxOpenActivity android:title="Settings" android:dependency="mwidget_widget_enable" grx:activity="mickles.app.mwidgetsetup/mickles.app.mwidgetsetup.mSetupActivity" />
+	<GrxPreferenceCategory android:title="Double tap to sleep (keyguard)" />
+    <GrxSwitchPreference android:title="Only statusbar" android:key="is_kg_dt2s" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <GrxSwitchPreference android:title="All lockscreen" android:key="is_kg_dt2s_anywhere" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+</PreferenceScreen>

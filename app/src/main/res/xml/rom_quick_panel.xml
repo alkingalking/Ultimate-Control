@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:grx="http://schemas.android.com/apk/res-auto">
+    <GrxButtonPreference grx:button_Style="big" grx:button_Text="Press here to apply all changes" grx:confirmKillpackage="false" grx:killpackage="com.android.systemui" />
+    <GrxSingleSelection android:title="Quick tiles" android:key="QSPanel_NumberCount" android:summary="Number of quick panel tiles" android:defaultValue="6" grx:optionsArray="@array/toggle_entries" grx:valuesArray="@array/toggle_values" />
+	<GrxSwitchPreference android:title="Multi-User icon" android:key="show_multi_user" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <GrxSwitchPreference android:title="Battery temperature" android:key="hide_temp" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <GrxPreferenceCategory android:title="Native blur" />
+    <GrxSwitchPreference android:title="Native blur" android:key="dlx_np_blur" android:defaultValue="0" grx:systemType="system" />
+    <GrxSeekBar android:title="Intensity" android:key="dlx_np_blur_amount" android:dependency="dlx_np_blur" android:defaultValue="7" grx:interval="1" grx:maxValue="15" grx:minValue="1" grx:systemType="system" />
+	<GrxPreferenceCategory android:title="Data usage view" />
+    <GrxSwitchPreference android:title="Data usage view" android:key="data_usage_visibility" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <GrxColorPicker android:title="Color" android:key="data_usage_text_color" android:summary="Set color" android:dependency="data_usage_visibility" android:defaultValue="0xFF0098FF" grx:showAlphaSlider="true" />
+    <GrxSingleSelection android:title="Font" android:key="data_usage_view_text_style" android:dependency="data_usage_visibility" android:defaultValue="0" grx:optionsArray="@array/data_usage_text_style_entries" grx:valuesArray="@array/data_usage_text_style_values" />
+    <GrxSingleSelection android:title="Position" android:key="data_usage_text_gravity" android:dependency="data_usage_visibility" android:defaultValue="0" grx:optionsArray="@array/data_usage_gravity_entries" grx:valuesArray="@array/data_usage_gravity_values" />
+</PreferenceScreen>

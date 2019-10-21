@@ -1,16 +1,485 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!-- Info fragment tabs -->
-
-
-    <string-array name="rom_tabs_names"> <!-- do not change this array name !!!! -->
-        <item>Rom Info</item>
-    </string-array>
-
-    <string-array name="rom_tabs_layouts"> <!-- do not change this array name !!!! -->
-        <item>rom_info_tab</item>
-    </string-array>
-
-
+<string-array name="rom_tabs_names">
+     <item>Rom Info</item>
+</string-array>
+<string-array name="rom_tabs_layouts">
+     <item>rom_info_tab</item>
+</string-array>
+# Volume Skip Tracks
+    <string name="skip_tracks_category">Skip tracks when screen is off</string>
+    <string name="info_skip_tracks">Play/stop works when the phone is not in deep sleep and a music app has got the audio focus (is playing o was playing not too long ago. When in deep sleep volume keys are not enabled by the system</string>
+    <string name="enable_skip_tracks">Enable skip tracks</string>
+    <string name="double_tap_skip_tracks">Double click play/stop music</string>
+    <string name="time_skip_tracks">Long press min time</string>
+    <string name="time_dc_skip_tracks">Double click max time</string>
+    <string name="vibrate_skip_tracks">Vibrate on long and double click</string>
+    <string name="vibrate_skip_tracks_summary">The mod uses system feedback vibration intensity, however it is not needed to enable main system switch for vibration feedback</string>
+    <string name="vibrate_skip_intensity">Vibration feedback intensity</string>
+# Animation Scale
+<string-array name="window_animation_scale_entries">
+     <item>Animation off</item>
+     <item>Animation scale 0.2x</item>
+     <item>Animation scale 0.25x</item>
+     <item>Animation scale 0.3x</item>
+     <item>Animation scale 0.4x</item>
+     <item>Animation scale 0.5x</item>
+     <item>Animation scale 0.6x</item>
+     <item>Animation scale 0.7x</item>
+     <item>Animation scale 0.8x</item>
+     <item>Animation scale 0.9x</item>
+     <item>Animation scale 1x</item>
+     <item>Animation scale 1.5x</item>
+     <item>Animation scale 2x</item>
+     <item>Animation scale 3x</item>
+     <item>Animation scale 5x</item>
+     <item>Animation scale 10x</item>
+</string-array>
+<string-array name="window_animation_scale_values">
+     <item>0</item>
+     <item>.2</item>
+     <item>.25</item>
+     <item>.3</item>
+     <item>.4</item>
+     <item>.5</item>
+     <item>.6</item>
+     <item>.7</item>
+     <item>.8</item>
+     <item>.9</item>
+     <item>1</item>
+     <item>1.5</item>
+     <item>2</item>
+     <item>3</item>
+     <item>5</item>
+     <item>10</item>
+</string-array>
+# Quick Toggles
+<string-array name="toggle_entries">
+     <item>3</item>
+     <item>4</item>
+     <item>5</item>
+     <item>6 (default)</item>
+     <item>7</item>
+     <item>8</item>
+     <item>9</item>
+</string-array>
+<string-array name="toggle_values">
+     <item>3</item>
+     <item>4</item>
+     <item>5</item>
+     <item>6</item>
+     <item>7</item>
+     <item>8</item>
+     <item>9</item>
+</string-array>
+# Low Battery Notification
+<string-array name="lowbattpercentage_entries">
+     <item>3</item>
+     <item>5</item>
+     <item>10</item>
+     <item>15</item>
+</string-array>
+<string-array name="lowbattpercentage_values">
+     <item>3</item>
+     <item>5</item>
+     <item>10</item>
+     <item>15</item>
+</string-array>
+<string-array name="critbattpercentage_entries">
+     <item>1</item>
+     <item>2</item>
+     <item>3</item>
+     <item>5</item>
+</string-array>
+<string-array name="critbattpercentage_values">
+     <item>1</item>
+     <item>2</item>
+     <item>3</item>
+     <item>5</item>
+</string-array>
+# Network Traffic
+<string-array name="traffic_state_items">
+     <item>Disabled</item>
+     <item>Upload only</item>
+     <item>Download only</item>
+     <item>Upload and download</item>
+</string-array>
+<string-array name="traffic_state_values">
+     <item>0</item>
+     <item>1</item>
+     <item>2</item>
+     <item>3</item>
+</string-array>
+<string-array name="traffic_style_entries">
+     <item>Normal</item>
+     <item>Bold</item>
+     <item>Italic</item>
+     <item>Bold italic</item>
+</string-array>
+<string-array name="traffic_style_entry_values">
+     <item>0</item>
+     <item>1</item>
+     <item>2</item>
+     <item>3</item>
+</string-array>
+<string-array name="traffic_entries">
+     <item>Right</item>
+     <item>Left</item>
+</string-array>
+<string-array name="traffic_values">
+     <item>1</item>
+     <item>2</item>
+</string-array>
+<string-array name="arrow_position_entries">
+     <item>To end of view</item>
+     <item>To start of view</item>
+</string-array>
+<string-array name="arrow_position_values">
+     <item>0</item>
+     <item>1</item>
+</string-array>
+# Battery Bar
+<string-array name="battery_bar_entries">
+     <item>Disabled</item>
+     <item>Enabled</item>
+</string-array>
+<string-array name="battery_bar_style_entries">
+     <item>Center-mirrored</item>
+     <item>Regular</item>
+</string-array>
+<string-array name="battery_bar_style_values">
+     <item>1</item>
+     <item>0</item>
+</string-array>
+<string-array name="battery_bar_values">
+     <item>0</item>
+     <item>1</item>
+</string-array>
+# Battery
+<string-array name="battery_hide_views_entries">
+     <item>Disabled</item>
+     <item>Enabled</item>
+</string-array>
+<string-array name="battery_hide_views_values">
+     <item>battery</item>
+     <item>shown</item>
+</string-array>
+<string name="display_battery_percentage">Percentage</string>
+# Clock Date
+<string-array name="clock_date_display_entries">
+     <item>Disabled</item>
+     <item>Small</item>
+     <item>Regular</item>
+</string-array>
+<string-array name="clock_date_display_values">
+     <item>0</item>
+     <item>1</item>
+     <item>2</item>
+</string-array>
+<string-array name="clock_date_format_entries_values">
+     <item>dd MM yy</item>
+     <item>dd/ MM/ yy</item>
+     <item>dd. MM. yy</item>
+     <item>dd- MM- yy</item>
+     <item>MM dd yy</item>
+     <item>MM/ dd/ yy</item>
+     <item>MM. dd. yy</item>
+     <item>MM- dd- yy</item>
+     <item>yyyy MM dd</item>
+     <item>yyyy- MM- dd</item>
+     <item>yyyy/ MM/ dd</item>
+     <item>yyyy. MM. dd</item>
+     <item>yyyy dd MM</item>
+     <item>yyyy- dd- MM</item>
+     <item>yyyy/ dd/ MM</item>
+     <item>yyyy. dd. MM</item>
+     <item>yy dd MM</item>
+     <item>yy- dd- MM</item>
+     <item>yy/ dd/ MM</item>
+     <item>yy. dd. MM</item>
+     <item>yy dd MMM</item>
+     <item>yy- dd- MMM</item>
+     <item>yy/ dd/ MMM</item>
+     <item>yy. dd. MMM</item>
+     <item>yy dd MMMM</item>
+     <item>yy- dd- MMMM</item>
+     <item>yy/ dd/ MMMM</item>
+     <item>yy. dd. MMMM</item>
+     <item>MMM dd</item>
+     <item>MMM dd yyyy</item>
+     <item>MMM dd/ yyyy</item>
+     <item>MMM dd- yyyy</item>
+     <item>MMM dd. yyyy</item>
+     <item>MMMM dd/ yyyy</item>
+     <item>MMMM dd yyyy</item>
+     <item>MMMM dd- yyyy</item>
+     <item>MMMM dd. yyyy</item>
+     <item>dd</item>
+     <item>EEE</item>
+     <item>EEE dd</item>
+     <item>EEE dd MM</item>
+     <item>EEE dd/ MM</item>
+     <item>EEE dd- MM</item>
+     <item>EEE dd. MM</item>
+     <item>EEE dd MM yy</item>
+     <item>EEE dd/ MM/ yy</item>
+     <item>EEE dd- MM- yy</item>
+     <item>EEE dd. MM. yy</item>
+     <item>EEE dd MM yyyy</item>
+     <item>EEE dd/ MM/ yyyy</item>
+     <item>EEE dd- MM- yyyy</item>
+     <item>EEE dd. MM. yyyy</item>
+     <item>EEE MM dd</item>
+     <item>EEE MM/ dd</item>
+     <item>EEE MM- dd</item>
+     <item>EEE MM. dd</item>
+     <item>EEE MM dd yy</item>
+     <item>EEE MM/ dd/ yy</item>
+     <item>EEE MM- dd- yy</item>
+     <item>EEE MM. dd. yy</item>
+     <item>EEE MM dd yyy</item>
+     <item>EEE MM/ dd/ yyy</item>
+     <item>EEE MM- dd- yyy</item>
+     <item>EEE MM. dd. yyy</item>
+     <item>EEE dd MMM</item>
+     <item>EEE dd/ MMM</item>
+     <item>EEE dd- MMM</item>
+     <item>EEE dd. MMM</item>
+     <item>EEE dd MMMM</item>
+     <item>EEE dd/ MMMM</item>
+     <item>EEE dd- MMMM</item>
+     <item>EEE dd. MMMM</item>
+     <item>EEE MMM dd</item>
+     <item>EEE MMM/ dd</item>
+     <item>EEE MMM. dd</item>
+     <item>EEE MMM- dd</item>
+     <item>EEE MMMM dd</item>
+     <item>EEE MMMM/ dd</item>
+     <item>EEE MMMM. dd</item>
+     <item>EEE MMMM- dd</item>
+     <item>EEEE dd MM</item>
+     <item>EEEE dd/ MM</item>
+     <item>EEEE dd- MM</item>
+     <item>EEEE dd.MM</item>
+     <item>EEEE MM dd</item>
+     <item>EEEE MM/ dd</item>
+     <item>EEEE MM- dd</item>
+     <item>EEEE MM. dd</item>
+     <item>EEEE dd MMMM</item>
+     <item>EEEE dd/ MMMM</item>
+     <item>EEEE dd- MMMM</item>
+     <item>EEEE dd. MMMM</item>
+     <item>EEEE dd yyyy</item>
+     <item>EEEE dd/ yyyy</item>
+     <item>EEEE dd- yyyy</item>
+     <item>EEEE dd. yyyy</item>
+     <item>EEEE dd MMM</item>
+     <item>EEEE dd/ MMM</item>
+     <item>EEEE dd- MMM</item>
+     <item>EEEE dd. MMM</item>
+     <item>EEEE dd yy</item>
+     <item>EEEE dd/ yy</item>
+     <item>EEEE dd- yy</item>
+     <item>EEEE dd. yy</item>
+     <item>EEE dd MMM yyyy</item>
+     <item>EEE dd/ MMM/ yyyy</item>
+     <item>EEE dd. MMM. yyyy</item>
+     <item>EEE dd- MMM- yyyy</item>
+     <item>EEE dd MMMM yyyy</item>
+     <item>EEE dd- MMMM- yyyy</item>
+     <item>EEE dd/ MMMM/ yyyy</item>
+     <item>EEE dd. MMMM. yyyy</item>
+     <item>EEEE dd MMM yyyy</item>
+     <item>EEEE dd/ MMM/ yyyy</item>
+     <item>EEEE dd. MMM. yyyy</item>
+     <item>EEEE dd- MMM- yyyy</item>
+     <item>EEEE dd MMMM yyyy</item>
+     <item>EEEE dd- MMMM- yyyy</item>
+     <item>EEEE dd/ MMMM/ yyyy</item>
+     <item>EEEE dd. MMMM. yyyy</item>
+     <item>EEE dd MMM yy</item>
+     <item>EEE dd/ MMM/ yy</item>
+     <item>EEE dd- MMM- yy</item>
+     <item>EEE dd. MMM. yy</item>
+     <item>EEE dd MMMM yy</item>
+     <item>EEE dd/ MMMM/ yy</item>
+     <item>EEE dd- MMMM- yy</item>
+     <item>EEE dd. MMMM. yy</item>
+     <item>EEEE dd MMM yy</item>
+     <item>EEEE dd/ MMM/ yy</item>
+     <item>EEEE dd- MMM- yy</item>
+     <item>EEEE dd. MMM. yy</item>
+     <item>EEEE dd MMMM yy</item>
+     <item>EEEE dd/ MMMM/ yy</item>
+     <item>EEEE dd- MMMM- yy</item>
+     <item>EEEE dd. MMMM. yy</item>
+</string-array>
+<string-array name="clock_date_position_entries">
+     <item>Left of clock</item>
+     <item>Right of clock</item>
+</string-array>
+<string-array name="clock_date_position_values">
+     <item>0</item>
+     <item>1</item>
+</string-array>
+<string-array name="clock_date_style_entries">
+     <item>Normal</item>
+     <item>Lowercase</item>
+     <item>UPPERCASE</item>
+</string-array>
+<string-array name="clock_date_style_values">
+     <item>0</item>
+     <item>1</item>
+     <item>2</item>
+</string-array>
+<string-array name="clock_font_style_entries">
+     <item>Use system font</item>
+     <item>Italic</item>
+     <item>Bold</item>
+     <item>Bold italic</item>
+     <item>Light</item>
+     <item>Light italic</item>
+     <item>Thin</item>
+     <item>Thin italic</item>
+     <item>Crisp italic</item>
+     <item>Thick fat</item>
+     <item>Dense bold italic</item>
+     <item>Medium</item>
+     <item>Medium italic</item>
+</string-array>
+<string-array name="clock_font_style_values">
+     <item>0</item>
+     <item>1</item>
+     <item>2</item>
+     <item>3</item>
+     <item>4</item>
+     <item>5</item>
+     <item>6</item>
+     <item>7</item>
+     <item>9</item>
+     <item>10</item>
+     <item>11</item>
+     <item>12</item>
+</string-array>
+<string-array name="clock_style_entries">
+     <item>Left</item>
+     <item>Center</item>
+     <item>Right</item>
+     <item>Disabled</item>
+</string-array>
+<string-array name="clock_style_values">
+     <item>0</item>
+     <item>1</item>
+     <item>2</item>
+     <item>3</item>
+</string-array>
+<string-array name="entries_status_bar_am_pm">
+     <item>Disabled</item>
+     <item>Small</item>
+     <item>Regular</item>
+</string-array>
+<string-array name="values_status_bar_am_pm">
+     <item>0</item>
+     <item>1</item>
+     <item>2</item>
+</string-array>
+# Data Usage
+<string-array name="data_usage_gravity_entries">
+     <item>Right</item>
+     <item>Center</item>
+     <item>Left</item>
+</string-array>
+<string-array name="data_usage_gravity_values">
+     <item>0</item>
+     <item>1</item>
+     <item>2</item>
+</string-array>
+<string-array name="data_usage_text_style_entries">
+     <item>Normal</item>
+     <item>Bold</item>
+     <item>Italic</item>
+     <item>Bold italic</item>
+</string-array>
+<string-array name="data_usage_text_style_values">
+     <item>0</item>
+     <item>1</item>
+     <item>2</item>
+     <item>3</item>
+</string-array>
+# Icons
+<string name="hide_show_views_sum">This option is applied both in user and lock screens. It only applies to main views and system icons</string>
+<string name="battery_and_text">Battery</string>
+<string name="mobile">Data</string>
+<string name="wifi">WiFi</string>
+<string name="airplane">Airplane</string>
+<string name="nfc_ic">NFC</string>
+<string name="bluetooth">Bluetooth</string>
+<string name="alarm">Alarm</string>
+<string name="cast">Screen Cast</string>
+<string name="wifi_calling">WiFi Calling/VoLTE</string>
+<string name="wifi_p2p">WiFi P2P/Mirroring</string>
+<string name="location">GPS</string>
+<string name="volume_ic">Volume</string>
+<string name="power_saver_ic">Power Saver</string>
+<string name="data_saver_ic">Data Saver</string>
+<string name="hotspot">Hotspot</string>
+<string name="wearable_gear">Gear</string>
+<string name="headset_ic">Headset</string>
+<string name="rotate_ic">Rotation</string>
+<string-array name="sb_hide_views_options">
+     <item>@string/battery_and_text</item>
+     <item>@string/mobile</item>
+     <item>@string/wifi</item>
+     <item>@string/airplane</item>
+	 <item>@string/nfc_ic</item>
+     <item>@string/bluetooth</item>
+     <item>@string/alarm</item>
+     <item>@string/cast</item>
+     <item>@string/wifi_p2p</item>
+     <item>@string/wifi_calling</item>
+     <item>@string/location</item>
+	 <item>@string/volume_ic</item>
+     <item>@string/power_saver_ic</item>
+     <item>@string/data_saver_ic</item>
+     <item>@string/hotspot</item>
+     <item>@string/wearable_gear</item>
+	 <item>@string/headset_ic</item>
+     <item>@string/rotate_ic</item>
+</string-array>
+<string-array name="sb_hide_views_values">
+     <item>battery</item>
+     <item>mobile</item>
+     <item>wifi</item>
+     <item>airplane</item>
+     <item>nfc_on</item>
+     <item>bluetooth</item>
+     <item>alarm_clock</item>
+     <item>cast</item>
+     <item>wifi_p2p</item>
+     <item>ims_volte</item>
+     <item>location</item>
+     <item>volume</item>
+     <item>power_saver</item>
+     <item>data_saver</item>
+     <item>hotspot</item>
+     <item>wearable_gear</item>
+	 <item>headset</item>
+     <item>rotate</item>
+</string-array>
+# Immersive Mode
+<string name="default_config">Default configuration</string>
+<string name="full_creen">Full screen</string>
+<string name="hide_status_bar">Hide status bar</string>
+<string-array name="immersive_entries">
+     <item>Disabled (Default)</item>
+     <item>Enabled (Full screen)</item>
+     <item>Hide status bar</item>
+     <item>Hide navigation bar</item>
+</string-array>
+<string-array name="immersive_values">
+     <item>immersive.full</item>
+     <item>immersive.full=*</item>
+     <item>immersive.status=*</item>
+     <item>immersive.navigation=*</item>
+</string-array>
 </resources>
